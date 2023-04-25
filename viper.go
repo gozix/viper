@@ -48,7 +48,6 @@ const (
 func NewBundle(options ...Option) *Bundle {
 	var opts = []Option{
 		AutomaticEnv(),
-		EnvPrefix("ENV"),
 		EnvKeyReplacer(strings.NewReplacer(".", "_")),
 		ConfigName("config"),
 		ConfigType("json"),
